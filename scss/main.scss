@@ -33,11 +33,13 @@
             width: 17rem;
 
             & .badge {
+                @include u.transition-time(opacity);
                 color: c.$white;
                 background-color: c.$blue;
                 border-radius: .5rem;
                 font-size: 1.6rem;
                 font-weight: 900;
+                opacity: 1;
                 padding: .2rem 1.2rem;
             }
         }
@@ -55,6 +57,7 @@
 
     @for $i from 1 through 3 {
         &__message:nth-of-type(#{$i}) {
+            @include u.transition-time(background-color);
             background-color: c.$very-light-grayish-blue;
         }
     }
@@ -139,10 +142,12 @@
         }
 
         .bullet {
+            @include u.transition-time(opacity);
             background-color: c.$red;
             border-radius: 50%;
             display: block;
             height: .8rem;
+            opacity: 1;
             position: absolute;
             right: 2rem;
             top: 2rem;
