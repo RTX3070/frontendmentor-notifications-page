@@ -1,0 +1,22 @@
+@use './colors' as c;
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: c.$light-grayish-blue-1;
+    color: c.$dark-grayish-blue;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 100vh;
+}
